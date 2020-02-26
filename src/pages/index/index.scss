@@ -10,3 +10,26 @@
 @import "~taro-ui/dist/style/components/tab-bar.scss";
 @import "~taro-ui/dist/style/components/badge.scss";
 @import "~taro-ui/dist/style/components/icon.scss";
+
+// loading 
+@import "~taro-ui/dist/style/components/activity-indicator.scss";
+@import '~taro-ui/dist/style/components/loading.scss';
+
+
+.at-search-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+.list{  
+    margin-top:  80rpx;
+    margin-bottom: 100rpx;
+    .listItem{
+        margin-top: 20rpx;
+    }
+}
+.listCard{
+    margin-top: 40rpx;
+}

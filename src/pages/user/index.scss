@@ -1,0 +1,25 @@
+// 头像
+@import "~taro-ui/dist/style/components/avatar.scss";
+// 箭头
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.topContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 600rpx;
+    background-color: bisque;
+    flex-direction: column;
+}
+.textName{
+    margin-top: 50rpx;
+}
+.midContainer{
+    .addressDefatult{
+        display:flex;
+        justify-content: space-between;
+        padding: 30rpx;
+        margin-top: 40rpx;
+        background-color: antiquewhite;
+    }
+}
