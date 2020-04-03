@@ -1,35 +1,8 @@
- // search-bar
-@import "~taro-ui/dist/style/components/search-bar.scss";
-@import "~taro-ui/dist/style/components/button.scss";
-@import "~taro-ui/dist/style/components/icon.scss";
-
-// card
-@import "~taro-ui/dist/style/components/card.scss";
-
-// tabBar
-@import "~taro-ui/dist/style/components/tab-bar.scss";
-@import "~taro-ui/dist/style/components/badge.scss";
-@import "~taro-ui/dist/style/components/icon.scss";
-
-// loading 
-@import "~taro-ui/dist/style/components/activity-indicator.scss";
-@import '~taro-ui/dist/style/components/loading.scss';
-
-
-.at-search-bar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
+.post-button {
+  position: fixed;
+  right: 60px;
+  bottom: 80px;
 }
-.list{  
-    margin-top:  80rpx;
-    margin-bottom: 100rpx;
-    .listItem{
-        margin-top: 20rpx;
-    }
-}
-.listCard{
-    margin-top: 40rpx;
-}
+.container {
+  height: 100% !important; // 后续删除!important 
+} 
