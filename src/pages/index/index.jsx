@@ -6,8 +6,8 @@ import './index.scss';
 function Index() {
   // 上拉事件
  useReachBottom(() => {
-  console.log('onReachBottom')
-
+  console.log('onReachBottom');
+  
 });
 
     // 获取列表详情页
@@ -92,7 +92,7 @@ const [list, setList] = useState([
       </ScrollView>
       <View>
       </View>
-      <View className='loading'><AtActivityIndicator mode='center'></AtActivityIndicator></View>
+      <View className='loading' ><AtActivityIndicator mode='center'></AtActivityIndicator></View>
     </View>
   )
 }
