@@ -3,6 +3,11 @@ module.exports = {
     NODE_ENV: '"development"'
   },
   defineConstants: {},
-  mini: {},
+  mini: {
+    webpackChain (chain, webpack) {
+      chain.plugin('analyzer')
+        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+    },
+  },
   h5: {}
 }

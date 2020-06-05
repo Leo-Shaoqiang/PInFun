@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'ultra-club',
+  projectName: 'PinFun',
   date: '2019-12-25',
   designWidth: 750,
   deviceRatio: {
@@ -37,6 +37,10 @@ const config = {
   plugins: [],
   defineConstants: {},
   mini: {
+    webpackChain (chain, webpack) {
+      chain.plugin('analyzer')
+        .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
+    },
     postcss: {
       pxtransform: {
         enable: true,
@@ -56,6 +60,7 @@ const config = {
         },
       },
     },
+   
   },
   h5: {
     publicPath: '/',

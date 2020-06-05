@@ -1,13 +1,18 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "pinFun",
-  "description": "init",
-  "appid": "wxa4b9152103ee4460",
-  "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "postcss": false,
-    "minified": false
-  },
-  "compileType": "miniprogram"
+	"miniprogramRoot": "dist/",
+	"projectname": "pinFun",
+	"description": "init",
+	"appid": "wxa4b9152103ee4460",
+	"cloudfunctionRoot": "functions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {}
 }

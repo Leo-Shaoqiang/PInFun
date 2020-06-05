@@ -12,6 +12,5 @@ export default function configStore() {
   const store = createStore(rootReducer, applyMiddleware(...middlewares))
 
   sagaMiddleware.run(rootSaga)
-
   return store
 }

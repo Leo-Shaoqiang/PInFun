@@ -20,22 +20,6 @@ export default function Index() {
   const isLogged = !!nickName
 
   const dispatch = useDispatch()
-  // useEffect(()=>{
-  //   // 获取远程数据
-  //   Taro.showLoading({ title: '加载中' })
-  //   Taro.request({
-  //     url: 'https://zhihu-daily.leanapp.cn/api/v1/last-stories'
-  //   }).then(res => {
-  //     Taro.hideLoading()
-  //     if (res.data.success) {
-  //       this.setState({
-  //         loading: false,
-  //         list: res.data.data
-  //       })
-  //     }
-  //   })
-  // },[])
-
   useEffect(() => {
     const WeappEnv = Taro.getEnv() === Taro.ENV_TYPE.WEAPP
 

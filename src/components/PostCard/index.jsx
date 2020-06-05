@@ -25,23 +25,6 @@ export default function PostCard(props) {
       : content
 
   return (
-    // <View
-    //   className={classNames('at-article', { postcard__isList: props.isList })}
-    //   onClick={handleClick}
-    // >
-    //   <View className="post-header">
-    //     <View className="at-article__h1">{title}</View>
-    //     <View className="profile-box">
-    //       <AtAvatar circle size="small" image={avatar} />
-    //       <View className="at-article__info post-nickName">{nickName}</View>
-    //     </View>
-    //   </View>
-    //   <View className="at-article__content">
-    //     <View className="at-article__section">
-    //       <View className="at-article__p">{slicedContent}</View>
-    //     </View>
-    //   </View>
-    // </View>
     <View className='feed-item' onClick={handleClick}>
     <View className='feed-source'>
       <View className='avatar flex1'>
