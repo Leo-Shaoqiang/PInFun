@@ -1,5 +1,5 @@
 {
-	"name": "ultra-club",
+	"name": "PInFun",
 	"version": "1.0.0",
 	"private": true,
 	"description": "",
@@ -24,7 +24,13 @@
 		"dev:h5": "npm run build:h5 -- --watch",
 		"dev:rn": "npm run build:rn -- --watch",
 		"dev:qq": "npm run build:qq -- --watch",
-		"dev:quickapp": "npm run build:quickapp -- --watch"
+		"dev:quickapp": "npm run build:quickapp -- --watch",
+		"husky": {
+			"hooks": {
+				"pre-commit": "npm test",
+				"pre-push": "npm test"
+			}
+		}
 	},
 	"author": "",
 	"license": "MIT",
@@ -72,6 +78,7 @@
 		"eslint-plugin-react": "^7.8.2",
 		"eslint-plugin-react-hooks": "^1.6.1",
 		"eslint-plugin-taro": "2.1.5",
+		"husky": "^4.2.5",
 		"stylelint": "9.3.0",
 		"stylelint-config-taro-rn": "2.1.5",
 		"stylelint-taro-rn": "2.1.5"
