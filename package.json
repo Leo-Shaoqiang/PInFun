@@ -31,12 +31,16 @@
 	},
 	"husky": {
 		"hooks": {
-			"pre-commit": "npm test",
-			"pre-push": "npm test"
+			"pre-commit": "echo '哈喽，小伙伴们，在这里可以做测试相关的逻辑哦，一般结合公司的 ci'",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-push": "echo 提交代码前需要先进行单元测试 && 可以做测试相关"
 		}
 	},
 	"lint-staged": {
-		"src/**/*.js" : ["eslint --fix", "git add"]
+		"src/**/*.js": [
+			"eslint --fix",
+			"git add"
+		]
 	},
 	"author": "MoozzZ",
 	"license": "MIT",
@@ -66,6 +70,8 @@
 		"webpack-bundle-analyzer": "^3.7.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^9.0.1",
+		"@commitlint/config-conventional": "^9.0.1",
 		"@tarojs/mini-runner": "2.1.5",
 		"@tarojs/webpack-runner": "2.1.5",
 		"@types/react": "^16.4.6",
