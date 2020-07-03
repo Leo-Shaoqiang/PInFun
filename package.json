@@ -26,7 +26,8 @@
 		"dev:qq": "npm run build:qq -- --watch",
 		"dev:quickapp": "npm run build:quickapp -- --watch",
 		"lint": "eslint src",
-		"precommit": "lint-staged"
+		"precommit": "lint-staged",
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"husky": {
 		"hooks": {

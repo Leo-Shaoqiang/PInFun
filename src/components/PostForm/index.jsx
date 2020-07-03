@@ -22,7 +22,6 @@ export default function PostForm() {
         message: '您还有内容没有填写完哦',
         type: 'warning',
       })
-
       return
     }
 
@@ -42,25 +41,25 @@ export default function PostForm() {
   }
 
   return (
-    <View className="post-form">
+    <View className='post-form'>
       <Form onSubmit={handleSubmit}>
         <View>
-          <View className="form-hint">标题</View>
+          <View className='form-hint'>标题</View>
           <Input
-            className="input-title"
-            type="text"
-            placeholder="点击输入标题"
+            className='input-title'
+            type='text'
+            placeholder='点击输入标题'
             value={formTitle}
             onInput={e => setFormTitle(e.target.value)}
           />
-          <View className="form-hint">正文</View>
+          <View className='form-hint'>正文</View>
           <Textarea
-            placeholder="点击输入正文"
-            className="input-content"
+            placeholder='点击输入正文'
+            className='input-content'
             value={formContent}
             onInput={e => setFormContent(e.target.value)}
           />
-          <AtButton formType="submit" type="primary">
+          <AtButton formType='submit' type='primary'>
             提交
           </AtButton>
         </View>

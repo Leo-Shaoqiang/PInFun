@@ -4,6 +4,7 @@ import { AtFloatLayout } from 'taro-ui'
 import { useSelector, useDispatch } from '@tarojs/redux'
 
 import Logout from '../Logout'
+import UserItem from '../UserItem'
 import LoginForm from '../LoginForm'
 import './index.scss'
 import { SET_IS_OPENED } from '../../constants'
@@ -20,14 +21,16 @@ export default function Footer(props) {
   const isOpened = useSelector(state => state.user.isOpened)
 
   return (
-    <View className="mine-footer">
+    <View className='mine-footer'>
+      {isLogged && <UserItem />}
       {isLogged && <Logout />}
-      <View className="tuture-motto">
+      <View className='tuture-motto'>
         {isLogged ? 'PinFun' : '您还未登录'}
       </View>
+      
       <AtFloatLayout
         isOpened={isOpened}
-        title="登录"
+        title='登录'
         onClose={() =>
           dispatch({ type: SET_IS_OPENED, payload: { isOpened: false } })
         }

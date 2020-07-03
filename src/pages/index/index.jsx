@@ -81,7 +81,7 @@ export default function Index() {
   console.log('posts', posts)
 
   return (
-    <View className="index">
+    <View className='index'>
       <AtMessage />
       <ScrollView className='container'
         scrollY
@@ -109,14 +109,14 @@ export default function Index() {
       </ScrollView>
       <AtFloatLayout
         isOpened={isOpened}
-        title="发表新文章"
+        title='发表新文章'
         onClose={() => setIsOpened(false)}
       >
         <PostForm />
       </AtFloatLayout>
-      <View className="post-button">
+      <View className='post-button'>
         <AtFab onClick={handleClickEdit}>
-          <Text className="at-fab__icon at-icon at-icon-edit"></Text>
+          <Text className='at-fab__icon at-icon at-icon-edit'></Text>
         </AtFab>
       </View>
     </View>
